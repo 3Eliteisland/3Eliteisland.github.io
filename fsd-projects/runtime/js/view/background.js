@@ -5,7 +5,7 @@ var background = function (window) {
     var draw = window.opspark.draw;
     var createjs = window.createjs;
     
-    /*
+    /* 
      * Create a background view for our game application
      */
     window.opspark.makeBackground = function(app,ground) {

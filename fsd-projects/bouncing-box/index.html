@@ -1,3 +1,4 @@
+036
 <!DOCTYPE html>
 <html>
   <head>
@@ -92,7 +93,7 @@
 
               /**
                * This Function will be called 20 times/second.
-               * Each time it is called, it should move the Box to a new location.
+               * Each time it is called, it should move the Box to a new location.0000000.........000000000000
                * If the box drifts off the screen, turn it around!
                */
               function update() { moveBoxTo(positionX, newPositionY);
@@ -116,7 +117,7 @@
             }
           };
 
-      vg tbyfc    /**
+          /**
                * This Function will be called each time the box is clicked.
                * Each time it is called, it should perform each of the following actions:
                * - increase the points total
@@ -142,7 +143,7 @@
                 changePositionX (boardWidth)
                 changePositionY (boardHeight)
                 changeBoxText(points)
-                 speed = speed + 3;
+                 speed = 3 * points + 10;
 
                 if (points % 3 === 0) {
                   speedMultiplier += 0.2
