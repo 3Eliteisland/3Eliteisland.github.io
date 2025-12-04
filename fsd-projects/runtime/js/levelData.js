@@ -9,7 +9,7 @@ var makeLevelData = function (window) {
     // behavior of our game
 
     // TODO 12: change the below data
-    var levelData = [
+      var levelData = [
       {
         name: "Robot Romp",
         number: 1,
@@ -31,9 +31,6 @@ var makeLevelData = function (window) {
         ],
       },
     ];
-    window.opspark.levelData = levelData;
-  };
-};
 
 // DON'T REMOVE THIS CODE //////////////////////////////////////////////////////
 if (
