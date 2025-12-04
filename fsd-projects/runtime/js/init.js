@@ -1,4 +1,4 @@
-var init = function (window) {
+ghvar init = function (window) {
   "use strict";
 
   var opspark = window.opspark,
