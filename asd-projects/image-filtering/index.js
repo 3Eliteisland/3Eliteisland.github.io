@@ -9,6 +9,30 @@ $(document).ready(function () {
 /////////////////////////////////////////////////////////
 //////// event handler functions are below here /////////
 /////////////////////////////////////////////////////////
+function applyFilter() {
+ for (let i = 0; i < image.length; i++) {
+  for (let j = 0; j < image[i].length; j++) {
+
+    let pixel = image [i][j];
+    console.log("pixel:" ,pixel);
+
+    let pixelArray = rgbStringToArray(pixel);
+    console.log ("pixelArray:" , pixelArray);
+
+    pixelArray[RED] = 200;
+
+    let updatedPixel = rgbArrayToString(pixelArray);
+    console.log("updatePixel:" , updatedPixel);
+
+    image [i][j] = updatedPixel;
+  }
+}
+
+}
+ 
+
+
+
 
 // this function resets the image to its original value; do not change this function
 function resetAndRender() {
@@ -20,8 +44,7 @@ function resetAndRender() {
 // all of your apply functions
 function applyAndRender() {
   // Multiple TODOs: Call your apply function(s) here
-
-  
+  applyFilter();
 
   // do not change the below line of code
   render($("#display"), image);
@@ -36,12 +59,18 @@ function applyAndRender() {
 
 // TODO 9 Create the applyFilterNoBackground function
 
-
 // TODO 6: Create the keepInBounds function
 
-
 // TODO 4: Create reddify filter function
+function reddify(pixelArray) {
 
+  pixelArray[red] = 200;
+
+}
+
+var testArray = [100, 100, 100];
+reddify(testArray);
+console.log(testArray); // Should show [200, 100, 100]
 
 // TODO 7 & 8: Create more filter functions
 

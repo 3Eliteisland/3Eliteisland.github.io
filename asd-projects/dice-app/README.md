@@ -1,3 +1,4 @@
+
 # 🎲 Dice Simulator
 
 A simple interactive dice app built with HTML, CSS, and JavaScript (using jQuery). This version is structured for use in VS Code with separate files for markup, styles, and behavior.
@@ -206,6 +207,9 @@ Now let’s make the die show the right face by calling a helper function called
 - Below the `makeDot` function, call it three times with the following parameters:
 
   ```js
+
+
+
   makeDot(50, 50, "#die"); // middle middle
   makeDot(25, 25, "#die"); // top left
   makeDot(75, 75, "#die"); // bottom right
